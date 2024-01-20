@@ -8,7 +8,7 @@ RISC-V, an open-source hardware instruction set architecture based on the RISC (
 
 ### Key Objectives
 - **Study RISC-V Architecture**: Investigating the structure and capabilities of RISC processors.
-  link: https://training.linuxfoundation.org/training/introduction-to-riscv-lfd110x/
+  link: https://training.linuxfoundation.org/training/introduction-to-riscv-lfd110x/ ( only start from chapter 5 : Chapter 5. RISC-V in Practice )
 - **Examine ML on EdgeAI and RISC-V**: Understanding how machine learning is implemented on EdgeAI using RISC-V architecture.
 - **Develop Data Mobility Solutions**: Enhancing the data transfer efficiency between CPU, ML engine, and memory.
 - **Implement ML Core**: Creating a machine learning core optimized for data mobility on RISC-V edge devices.
