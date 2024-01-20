@@ -4,9 +4,13 @@
 
 ### Build QEMU with the RISC-V Target:
 cd qemu
+
 git checkout v5.0.0
+
 ./configure --target-list=riscv64-softmmu
+
 sudo make -j $(nproc)
+
 sudo make install
 
 ### Build Linux for the RISC-V Target:
