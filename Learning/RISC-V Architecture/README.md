@@ -13,7 +13,26 @@ sudo apt install gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
 
 # Compiling and Running a RISC-V Program
 ## Compile the RISC-V Assembly File
+Create a file name rv-hello.s:
+```
+# Simple RISC-V Hello World
 
+.global _start
+
+_start: addi  a0, x0, 1
+        la    a1, helloworld
+        addi  a2, x0, 13
+        addi  a7, x0, 64
+        ecall
+
+        addi    a0, x0, 0
+        addi    a7, x0, 93
+        ecall
+
+.data
+helloworld:      .ascii "Hello World!\n"
+
+```
 Use the following command to compile a RISC-V assembly file named rv-hello.s:
 ```bash
 riscv64-linux-gnu-gcc -o rv-hello rv-hello.s -nostdlib -static
