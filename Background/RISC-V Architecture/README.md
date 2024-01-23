@@ -1,3 +1,8 @@
+
+## Link for study: 
+  - Chapter 5. RISC-V in Practice (https://learning.edx.org/course/course-v1:LinuxFoundationX+LFD110x+2T2022/block-v1:LinuxFoundationX+LFD110x+2T2022+type@sequential+block@4d06ddb3772f40f586a42d4d783b45e0/block-v1:LinuxFoundationX+LFD110x+2T2022+type@vertical+block@a35d9a66e4b24cb2b5de0ffa93940bf4) 
+  - https://s.net.vn/4ShS
+  
 # Running 64- and 32-bit RISC-V Linux Binaries on QEMU
 
 This README provides instructions on how to use QEMU user-level emulation to run 64-bit (RV64) and 32-bit (RV32) RISC-V Linux binaries, as well as how to compile and run a simple RISC-V assembly program.
