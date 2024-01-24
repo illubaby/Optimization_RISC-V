@@ -1,7 +1,9 @@
 ## Link for study: 
 - https://libraetd.lib.virginia.edu/public_view/kw52j890r
 
-[## Deploying deep learning models on the edge with Kenning](https://riscv.org/news/2021/06/deploying-deep-learning-models-on-the-edge-with-kenning/)
+## Deploying Deep Learning Models on the Edge with Kenning
+
+[Deploying Deep Learning Models on the Edge with Kenning](https://riscv.org/news/2021/06/deploying-deep-learning-models-on-the-edge-with-kenning/)
 
 # Astract
 Deep neural networks are highly demanding algorithms that consist of a huge amount of linear algebra operations which are both compute- and memory-intensive. Running them directly on edge devices is either impossible due to lack of resources or impractical due to incredibly long processing time. Hence, it is crucial to optimize the models for a given target platform before deployment, using a deep learning compiler.
