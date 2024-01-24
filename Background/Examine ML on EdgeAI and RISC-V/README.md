@@ -1,6 +1,9 @@
 ## Link for study: 
-- https://libraetd.lib.virginia.edu/public_view/kw52j890r
-
+- https://riscv.org/blog/2023/05/risc-v-and-the-future-of-machine-learning-computing/
+- https://projects.iq.harvard.edu/files/rvmlpu-barc-2020.pdf
+- https://riscv.org/blog/2022/01/edge-ai-on-low-footprint-risc-v-alexander-stanitzki-fraunhofer-ims/
+- https://codasip.com/press-release/2022/02/24/codasips-latest-risc-v-embedded-cores-enable-ai-ml-edge-customization/
+- https://www.embedded.com/telink-soc-uses-risc-v-p-extension-for-ai-ml-on-edge-devices/
 ## Deploying Deep Learning Models on the Edge with Kenning
 
 [Deploying Deep Learning Models on the Edge with Kenning](https://riscv.org/news/2021/06/deploying-deep-learning-models-on-the-edge-with-kenning/)
