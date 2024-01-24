@@ -21,10 +21,15 @@ Step my step to creating Edge AI deployment stacks:
 Kenning is a new ML framework developed by Antmicro for testing and deploying deep learning applications on the edge. 
 
 Kenning’s structure:
-Dataset class - performs dataset downloading, preparation, input preprocessing, output postprocessing and model evaluation,
-Model wrapper class - trains the model, prepares the model, performs model-specific input preprocessing and output postprocessing, runs inference on host using native framework,
-Model compiler class - optimizes and compiles the model,
-Runtime class - loads the model, performs inference on compiled model, runs target-specific processing of inputs and outputs, and runs performance benchmarks
-Runtime Protocol class - implements the communication protocol between the host and the target.
+
+- Dataset class - performs dataset downloading, preparation, input preprocessing, output postprocessing and model evaluation,
+
+- Model wrapper class - trains the model, prepares the model, performs model-specific input preprocessing and output postprocessing, runs inference on host using native framework,
+
+- Model compiler class - optimizes and compiles the model,
+
+- Runtime class - loads the model, performs inference on compiled model, runs target-specific processing of inputs and outputs, and runs performance benchmarks
+
+- Runtime Protocol class - implements the communication protocol between the host and the target.
 # Tracking performance of DL applications on target hardware
 One of the advantages of Kenning is the possibility to easily verify the work of the model on your target hardware - it calculates both performance measures (like CPU usage, GPU usage, RAM and VRAM usages, inference time), and quality measures (accuracy, precision, recall, G-Mean for classification scenarios, and IoU, mAP for detection scenarios).
