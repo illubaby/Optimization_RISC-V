@@ -16,7 +16,7 @@ RISC-V, an open-source hardware instruction set architecture based on the RISC (
 ## Resources and References
 - [RISC-V Foundation](https://riscv.org/)
 - Additional documents and materials provided by supervisors.
-
+- AI helper: ChatGPT, Copilot (Bing AI), https://huggingface.co/chat, https://bard.google.com/chat
 ## Installation and Usage
 (Include instructions on how to install, configure, and use your project here.)
 
