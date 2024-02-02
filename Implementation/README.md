@@ -53,3 +53,28 @@ Use DMA Engines: Use Direct Memory Access (DMA) engines for high-bandwidth data 
 - https://ieeexplore.ieee.org/document/8667579
 - https://www.andestech.com/wp-content/uploads/Andes-Software-Solutions-for-RISC-V.pdf (This software provides solutions for RISC-V, including DMA Engine and other features. It also provides an extensive software stack from bare metal, RTOS to Linux.)
 - https://www.microcontrollertips.com/memory-disk-drives-memory-fabrics-and-risc-v-faq/
+ #### Method 1: Neural CPU (NCPU)
+The
+proposed architecture is built on a binary neural network
+accelerator with the capability to emulate an in-order RISC-V
+CPU pipeline. The NCPU supports flexible programmability of
+RISC-V and maintains data locally to avoid costly core-to-core
+data transfer. -> (2 mode on one NCPU : CPU for general purpose and binary neural network accelerator). 
+- Idea:
+  - Leverage the existing logic and
+memories inside a neural network accelerator to recover the
+capability of conventional CPU pipeline operations. As a result,
+a NCPU core supports both ML inference and general-purpose
+CPU computing with efficiency similar to the respective
+architectures.
+  - The proposed NCPU architecture is designed to fully
+support the 32-bit RISC-V Base ISA. A customized RISC-V
+instruction set extension is developed to incorporate BNN
+operations, data transferring and mode switching.
+  - A special zero-latency transition scheme is developed to
+support seamless switching between CPU and BNN modes by
+essentially pipelining the reconfiguration. Data can remain in
+place while the core is reconfiguring thereby eliminating
+transfer between CPU and accelerator.
+
+  
