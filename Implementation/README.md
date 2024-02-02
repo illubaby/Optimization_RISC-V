@@ -53,7 +53,7 @@ Use DMA Engines: Use Direct Memory Access (DMA) engines for high-bandwidth data 
 - https://ieeexplore.ieee.org/document/8667579
 - https://www.andestech.com/wp-content/uploads/Andes-Software-Solutions-for-RISC-V.pdf (This software provides solutions for RISC-V, including DMA Engine and other features. It also provides an extensive software stack from bare metal, RTOS to Linux.)
 - https://www.microcontrollertips.com/memory-disk-drives-memory-fabrics-and-risc-v-faq/
- #### Method 1: Neural CPU (NCPU)
+ #### Method 1: Neural CPU (NCPU) (ref:NCPU.pdf)
 The
 proposed architecture is built on a binary neural network
 accelerator with the capability to emulate an in-order RISC-V
