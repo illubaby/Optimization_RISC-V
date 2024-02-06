@@ -76,5 +76,7 @@ support seamless switching between CPU and BNN modes by
 essentially pipelining the reconfiguration. Data can remain in
 place while the core is reconfiguring thereby eliminating
 transfer between CPU and accelerator.
-
-  
+#### Method 2: EXTREM-EDGE—EXtensions To RISC-V for Energy-efficient ML inference at the EDGE of IoT
+The article presents EXTREM-EDGE, a co-design methodology for enhancing RISC-V ISA with custom AI instructions and hardware accelerators, aimed at improving performance and energy efficiency for AI applications at the IoT edge.
+- Hardware AI functional units such as the Matrix Multiplication Accelerator (MMA) and in-memory computing units designed for optimized execution of vector-matrix multiplications (VMM), which are critical in neural network computations.
+- 
