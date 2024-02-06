@@ -78,5 +78,6 @@ place while the core is reconfiguring thereby eliminating
 transfer between CPU and accelerator.
 #### Method 2: EXTREM-EDGE—EXtensions To RISC-V for Energy-efficient ML inference at the EDGE of IoT
 The article presents EXTREM-EDGE, a co-design methodology for enhancing RISC-V ISA with custom AI instructions and hardware accelerators, aimed at improving performance and energy efficiency for AI applications at the IoT edge.
-- Hardware AI functional units such as the Matrix Multiplication Accelerator (MMA) and in-memory computing units designed for optimized execution of vector-matrix multiplications (VMM), which are critical in neural network computations.
-- 
+
+- EXTREM-EDGE presents a modular design for RISC-V processors, integrating AI Functional Units (AFUs) within the CPU pipeline, rather than as separate co-processors. This design facilitates efficient execution of AI tasks in conjunction with standard processing by leveraging specialized instructions for AI operations like vector-matrix multiplication. 
+- EXTREM-EDGE introduces AI-specific instruction set architecture (ISA) extensions for RISC-V and an accompanying software development kit (SDK). These extensions are categorized into 'Top-down' for AI algorithm acceleration and 'Bottom-up' to support AFU integration within the processor pipeline. The extensions enable fine-grained task offloading to AFUs, ensuring both AI and non-AI workloads can be processed on the same chip. Additionally, EXTREM-EDGE aims to support domain-specific languages and frameworks like TensorFlow and PyTorch, facilitating easier adoption and programming by end-users.
