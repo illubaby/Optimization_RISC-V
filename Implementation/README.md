@@ -87,4 +87,5 @@ The article presents 3 ways of designing DT kernels:
 - DT-Loop Kernel: represents the tree node as a recursive data structure, traversing trees from root to leaf through a while-loop statement.
 - DT-Rec Kernel: embeds leaf nodes into parent decision nodes, thus allows roughtly a 50% nodes decrease but demands extending the node data structure (over model space drops by 25%). Using recursive function calling ifself whenever accessing new decision nodes.
 - DT-Arr Kernel: Using 3 arrays naming features[], threshold[], child[], and using a while-loop statement to iteratively traverse the tree.
+
 The article also do kernels comparison between DT kernel designs and pinpoint the optimal kernel solution by evaluating the performance on a RISC-V platform (PULPissimo).
