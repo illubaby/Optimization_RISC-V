@@ -88,4 +88,4 @@ The article presents 3 ways of designing DT kernels:
 - DT-Rec Kernel: embeds leaf nodes into parent decision nodes, thus allows roughtly a 50% nodes decrease but demands extending the node data structure (over model space drops by 25%). Using recursive function calling ifself whenever accessing new decision nodes.
 - DT-Arr Kernel: Using 3 arrays naming features[], threshold[], child[], and using a while-loop statement to iteratively traverse the tree.
 
-The article also do kernels comparison between DT kernel designs and pinpoint the optimal kernel solution by evaluating the performance on a RISC-V platform (PULPissimo).
+The goal of designing three new DT kernels is to compared against the widely-adopted naive DT design. The article also do kernels comparison between DT kernel designs and pinpoint the optimal kernel solution by evaluating the performance on a RISC-V platform (PULPissimo). The result is: achieving up to 4.5us latency, 4.8x speedup, and 45% storage reduction.
