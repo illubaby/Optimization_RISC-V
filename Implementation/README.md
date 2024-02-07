@@ -81,3 +81,10 @@ The article presents EXTREM-EDGE, a co-design methodology for enhancing RISC-V I
 
 - EXTREM-EDGE presents a modular design for RISC-V processors, integrating AI Functional Units (AFUs) within the CPU pipeline, rather than as separate co-processors. This design facilitates efficient execution of AI tasks in conjunction with standard processing by leveraging specialized instructions for AI operations like vector-matrix multiplication. 
 - EXTREM-EDGE introduces AI-specific instruction set architecture (ISA) extensions for RISC-V and an accompanying software development kit (SDK). These extensions are categorized into 'Top-down' for AI algorithm acceleration and 'Bottom-up' to support AFU integration within the processor pipeline. The extensions enable fine-grained task offloading to AFUs, ensuring both AI and non-AI workloads can be processed on the same chip. Additionally, EXTREM-EDGE aims to support domain-specific languages and frameworks like TensorFlow and PyTorch, facilitating easier adoption and programming by end-users.
+
+ #### Method 3: Three alternative DT kernels optimization (Decision Trees and Random Forest in ML) for memory and compute-limited MCUs
+The article presents 3 ways of designing DT kernels:
+- DT-Loop Kernel: represents the tree node as a recursive data structure, traversing trees from root to leaf through a while-loop statement.
+- DT-Rec Kernel: embeds leaf nodes into parent decision nodes, thus allows roughtly a 50% nodes decrease but demands extending the node data structure (over model space drops by 25%). Using recursive function calling ifself whenever accessing new decision nodes.
+- DT-Arr Kernel: Using 3 arrays naming features[], threshold[], child[], and using a while-loop statement to iteratively traverse the tree.
+The article also do kernels comparison between DT kernel designs and pinpoint the optimal kernel solution by evaluating the performance on a RISC-V platform (PULPissimo).
