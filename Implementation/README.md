@@ -53,7 +53,7 @@ Use DMA Engines: Use Direct Memory Access (DMA) engines for high-bandwidth data 
 - https://ieeexplore.ieee.org/document/8667579
 - https://www.andestech.com/wp-content/uploads/Andes-Software-Solutions-for-RISC-V.pdf (This software provides solutions for RISC-V, including DMA Engine and other features. It also provides an extensive software stack from bare metal, RTOS to Linux.)
 - https://www.microcontrollertips.com/memory-disk-drives-memory-fabrics-and-risc-v-faq/
- #### Method 1: Neural CPU (NCPU) (ref:NCPU.pdf)
+ #### Method 1: Neural CPU (NCPU) (ref:NCPU.pdf) (Phúc)
 The
 proposed architecture is built on a binary neural network
 accelerator with the capability to emulate an in-order RISC-V
@@ -76,14 +76,14 @@ support seamless switching between CPU and BNN modes by
 essentially pipelining the reconfiguration. Data can remain in
 place while the core is reconfiguring thereby eliminating
 transfer between CPU and accelerator.
-#### Method 2: EXTREM-EDGE—EXtensions To RISC-V for Energy-efficient ML inference at the EDGE of IoT
+#### Method 2: EXTREM-EDGE—EXtensions To RISC-V for Energy-efficient ML inference at the EDGE of IoT (KIệt)
 The article presents EXTREM-EDGE, a co-design methodology for enhancing RISC-V ISA with custom AI instructions and hardware accelerators, aimed at improving performance and energy efficiency for AI applications at the IoT edge.
 
 - EXTREM-EDGE presents a modular design for RISC-V processors, integrating AI Functional Units (AFUs) within the CPU pipeline, rather than as separate co-processors. This design facilitates efficient execution of AI tasks in conjunction with standard processing by leveraging specialized instructions for AI operations like vector-matrix multiplication. 
 - EXTREM-EDGE introduces AI-specific instruction set architecture (ISA) extensions for RISC-V and an accompanying software development kit (SDK). These extensions are categorized into 'Top-down' for AI algorithm acceleration and 'Bottom-up' to support AFU integration within the processor pipeline. The extensions enable fine-grained task offloading to AFUs, ensuring both AI and non-AI workloads can be processed on the same chip. Additionally, EXTREM-EDGE aims to support domain-specific languages and frameworks like TensorFlow and PyTorch, facilitating easier adoption and programming by end-users.
 
 EXTREM-EDGE's co-design approach begins with TVM translating AI algorithms from DSLs into C code, enabling programming in preferred languages. Then, Synopsys ASIP Designer compiles this code for the custom processor, generating an SDK and RTL for the design. The process involves iterative profiling and optimization, with a focus on addressing bottlenecks by adding new instructions or AFUs to the processor model described in nML. This ensures that the resulting hardware and software are optimized and in sync for AI edge processing.
- #### Method 3: Three alternative DT kernels optimization (Decision Trees and Random Forest in ML) for memory and compute-limited MCUs
+ #### Method 3: Three alternative DT kernels optimization (Decision Trees and Random Forest in ML) for memory and compute-limited MCUs (Trung)
 The article presents 3 ways of designing DT kernels:
 - DT-Loop Kernel: represents the tree node as a recursive data structure, traversing trees from root to leaf through a while-loop statement.
 - DT-Rec Kernel: embeds leaf nodes into parent decision nodes, thus allows roughtly a 50% nodes decrease but demands extending the node data structure (over model space drops by 25%). Using recursive function calling ifself whenever accessing new decision nodes.
