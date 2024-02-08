@@ -47,3 +47,5 @@ After compiling, you can run the program with QEMU:
 ``` 
 qemu-riscv64 ./rv-hello
 ```
+## Some terms
+- Domain-specific processors are specialized computing units designed to efficiently handle specific types of computational tasks or algorithms. Unlike general-purpose processors that can execute a wide range of instructions for various applications, domain-specific processors are optimized for a particular set of operations, which can include graphics processing, digital signal processing, artificial intelligence (AI) computations, and more. 
