@@ -47,5 +47,15 @@ After compiling, you can run the program with QEMU:
 ``` 
 qemu-riscv64 ./rv-hello
 ```
-## Some terms
+# How to add an custom instruction in RISC-V architecture
+[Custom instruction in the software toolchain](https://pcotret.gitlab.io/riscv-custom/sw_toolchain.html)
+- Create opcode syntax for your custom instruction ( remember to avoid conflict)
+- MATCH and MASK:  
+
+  - Match Value: The match value is the specific pattern that you expect to find in the instruction's bits for it to be identified as a particular instruction.
+
+  - Mask Value: The mask value is used to ignore certain bits in the instruction when matching.
+- Modify the binutils (which is a collection of binary utility tools developed by the GNU project1)
+
+# Some terms
 - Domain-specific processors are specialized computing units designed to efficiently handle specific types of computational tasks or algorithms. Unlike general-purpose processors that can execute a wide range of instructions for various applications, domain-specific processors are optimized for a particular set of operations, which can include graphics processing, digital signal processing, artificial intelligence (AI) computations, and more. 
