@@ -92,3 +92,15 @@ The article presents 3 ways of designing DT kernels:
 The goal of designing three new DT kernels is to compared against the widely-adopted naive DT design. The article also do kernels comparison between DT kernel designs and pinpoint the optimal kernel solution by evaluating the performance on a RISC-V platform (PULPissimo). The result is: achieving up to 4.5us latency, 4.8x speedup, and 45% storage reduction.
 
 #### Method 4: LiteAIR5: A System-Level Framework for the Design and Modeling of AI-extended RISC-V Cores ( Kiệt)
+
+#### Method 5: Customizable Vector Acceleration in Extreme-Edge Computing (Trung)
+To support CNN classification problems, by adding the Vector Coprocessing Unit (VCU), being internally comprised of Multi-purpose Functional Units (MFU) and Scratch-Pad memory interface (Forming T1 microrchitecture from the T0 - The T0 microarchitecture resembles a classic four-stage RISC pipeline, except for
+having multiple Program Counters to support multi-threading, and replicated register files and Control/Status Registers). (T0 and T1 elaboration can be seen in the pdf)
+
+For Klessydra-T processors there is a set of new RISC-V based instruction summarized in table 2 (pdf).
+
+The core point is the design parameters and corresponding configurations including: M - Number of SPMI Units, F - number of FUs, D - number of each lane in FU
+
+The article implement a VGG-16 derivation based on a widely known CIFAR-10 dataset (10 classes of 32x32 pixels images with total of 22 layers). Also the is a comparison chart between each optimal configuration for each layer against the non-accelerated T0 core in terms of time execution, efficiency, cost overhead, ....
+
+
