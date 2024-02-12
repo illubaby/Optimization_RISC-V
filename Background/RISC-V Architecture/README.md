@@ -49,6 +49,7 @@ qemu-riscv64 ./rv-hello
 ```
 # How to add an custom instruction in RISC-V architecture
 [Custom instruction in the software toolchain](https://pcotret.gitlab.io/riscv-custom/sw_toolchain.html)
+https://lijie.me/post/adding-custom-instructions-to-riscv-gnu-toolchain/
 - Create opcode syntax for your custom instruction ( remember to avoid conflict)
 - MATCH and MASK:  
 

@@ -92,6 +92,10 @@ The article presents 3 ways of designing DT kernels:
 The goal of designing three new DT kernels is to compared against the widely-adopted naive DT design. The article also do kernels comparison between DT kernel designs and pinpoint the optimal kernel solution by evaluating the performance on a RISC-V platform (PULPissimo). The result is: achieving up to 4.5us latency, 4.8x speedup, and 45% storage reduction.
 
 #### Method 4: LiteAIR5: A System-Level Framework for the Design and Modeling of AI-extended RISC-V Cores ( Kiệt)
+LiteAIR5: A System-Level Framework for the Design and Modeling of AI-extended RISC-V Cores" presents LiteAIR5, a comprehensive framework for creating and modeling AI-extended RISC-V processor cores. This novel architecture incorporates instruction set architecture (ISA) extensions to significantly enhance performance, achieving up to 37x improvement for General Matrix Multiply (GEMM) operations over a baseline RISC-V core. 
+- Use the Co-design like the Extreme Edge 
+- Have the Control and Status Register (CSR) instructions
+- Custom instructions (designed to work with specific AI Functional Units): mac, gemm,vmm,..
 
 #### Method 5: Customizable Vector Acceleration in Extreme-Edge Computing (Trung)
 To support CNN classification problems, by adding the Vector Coprocessing Unit (VCU), being internally comprised of Multi-purpose Functional Units (MFU) and Scratch-Pad memory interface (Forming T1 microrchitecture from the T0 - The T0 microarchitecture resembles a classic four-stage RISC pipeline, except for
