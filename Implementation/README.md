@@ -102,5 +102,12 @@ For Klessydra-T processors there is a set of new RISC-V based instruction summar
 The core point is the design parameters and corresponding configurations including: M - Number of SPMI Units, F - number of FUs, D - number of each lane in FU
 
 The article implement a VGG-16 derivation based on a widely known CIFAR-10 dataset (10 classes of 32x32 pixels images with total of 22 layers). Also the is a comparison chart between each optimal configuration for each layer against the non-accelerated T0 core in terms of time execution, efficiency, cost overhead, ....
+#### Method 6: Logic in Memory (Phuc)
+Logic in Memory (LiM) architectures to overcome the communication speed issue between the CPU and memory..The goal of the LiM concept is to reduce load and store operations by executing part of the computation directly inside the memory.
+In more detail, the proposed memory architecture can perform the following operations:
+- Normal load and store operations: the new memory can still behave like a memory such that it will perform a read or a write in just one clock cycle. The data port of the memory supports load and store for 8-bit, 16-bit or 32-bit data.
+- Bitwise operations: The available bitwise operations are AND, OR and XOR
+- Maximum and minimum: a special load operation, max min load enables calculation of the maximum or minimum value for a specific range of memory locations.
 
+Link framework: https://github.com/vlsi-nanocomputing/risc-v-lim-architecture/tree/main
 
