@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Apr  8 00:09:19 2024
+# Process ID: 157596
+# Current directory: /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation
+# Command line: vivado
+# Log file: /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/vivado.log
+# Journal file: /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/vivado.jou
+# Running On: illubaby-ASUS-TUF-Gaming-F15, OS: Linux, CPU Frequency: 2475.440 MHz, CPU Physical cores: 14, Host memory: 16361 MB
+#-----------------------------------------------------------
+start_gui
+set_param board.repoPaths {/home/illubaby/.Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store}
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:arty-a7-100:1.1]
+xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]
+create_project Picorv32 /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32 -part xc7a35ticsg324-1L
+set_property board_part digilentinc.com:arty-a7-35:part0:1.1 [current_project]
+add_files -norecurse /home/illubaby/RISC-V/picorv32/picorv32.v
+update_compile_order -fileset sources_1
+launch_simulation
+source picorv32_axi.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/illubaby/RISC-V/picorv32/testbench.v
+update_compile_order -fileset sim_1
+launch_simulation
+source picorv32_wb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source testbench.tcl
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1

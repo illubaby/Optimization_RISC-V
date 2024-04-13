@@ -1,0 +1,476 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Apr  8 00:16:26 2024
+# Process ID: 158943
+# Current directory: /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32/Picorv32.runs/synth_1
+# Command line: vivado -log picorv32_axi.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source picorv32_axi.tcl
+# Log file: /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32/Picorv32.runs/synth_1/picorv32_axi.vds
+# Journal file: /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32/Picorv32.runs/synth_1/vivado.jou
+# Running On: illubaby-ASUS-TUF-Gaming-F15, OS: Linux, CPU Frequency: 1747.761 MHz, CPU Physical cores: 14, Host memory: 16361 MB
+#-----------------------------------------------------------
+source picorv32_axi.tcl -notrace
+Command: synth_design -top picorv32_axi -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 158956
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1753.316 ; gain = 406.684 ; free physical = 2739 ; free virtual = 9143
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'picorv32_axi' [/home/illubaby/RISC-V/picorv32/picorv32.v:2516]
+INFO: [Synth 8-6157] synthesizing module 'picorv32_axi_adapter' [/home/illubaby/RISC-V/picorv32/picorv32.v:2730]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_axi_adapter' (0#1) [/home/illubaby/RISC-V/picorv32/picorv32.v:2730]
+INFO: [Synth 8-6157] synthesizing module 'picorv32' [/home/illubaby/RISC-V/picorv32/picorv32.v:62]
+	Parameter ENABLE_COUNTERS bound to: 1'b1 
+	Parameter ENABLE_COUNTERS64 bound to: 1'b1 
+	Parameter ENABLE_REGS_16_31 bound to: 1'b1 
+	Parameter ENABLE_REGS_DUALPORT bound to: 1'b1 
+	Parameter TWO_STAGE_SHIFT bound to: 1'b1 
+	Parameter BARREL_SHIFTER bound to: 1'b0 
+	Parameter TWO_CYCLE_COMPARE bound to: 1'b0 
+	Parameter TWO_CYCLE_ALU bound to: 1'b0 
+	Parameter COMPRESSED_ISA bound to: 1'b0 
+	Parameter CATCH_MISALIGN bound to: 1'b1 
+	Parameter CATCH_ILLINSN bound to: 1'b1 
+	Parameter ENABLE_PCPI bound to: 1'b0 
+	Parameter ENABLE_MUL bound to: 1'b0 
+	Parameter ENABLE_FAST_MUL bound to: 1'b0 
+	Parameter ENABLE_DIV bound to: 1'b0 
+	Parameter ENABLE_IRQ bound to: 1'b0 
+	Parameter ENABLE_IRQ_QREGS bound to: 1'b1 
+	Parameter ENABLE_IRQ_TIMER bound to: 1'b1 
+	Parameter ENABLE_TRACE bound to: 1'b0 
+	Parameter REGS_INIT_ZERO bound to: 1'b0 
+	Parameter MASKED_IRQ bound to: 0 - type: integer 
+	Parameter LATCHED_IRQ bound to: -1 - type: integer 
+	Parameter PROGADDR_RESET bound to: 0 - type: integer 
+	Parameter PROGADDR_IRQ bound to: 16 - type: integer 
+	Parameter STACKADDR bound to: -1 - type: integer 
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/illubaby/RISC-V/picorv32/picorv32.v:1267]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/illubaby/RISC-V/picorv32/picorv32.v:1313]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/illubaby/RISC-V/picorv32/picorv32.v:1313]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/illubaby/RISC-V/picorv32/picorv32.v:1496]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/illubaby/RISC-V/picorv32/picorv32.v:1496]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/illubaby/RISC-V/picorv32/picorv32.v:1582]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/illubaby/RISC-V/picorv32/picorv32.v:1582]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/illubaby/RISC-V/picorv32/picorv32.v:1582]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/illubaby/RISC-V/picorv32/picorv32.v:1582]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/illubaby/RISC-V/picorv32/picorv32.v:1582]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32' (0#1) [/home/illubaby/RISC-V/picorv32/picorv32.v:62]
+WARNING: [Synth 8-7071] port 'mem_la_read' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/illubaby/RISC-V/picorv32/picorv32.v:2673]
+WARNING: [Synth 8-7071] port 'mem_la_write' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/illubaby/RISC-V/picorv32/picorv32.v:2673]
+WARNING: [Synth 8-7071] port 'mem_la_addr' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/illubaby/RISC-V/picorv32/picorv32.v:2673]
+WARNING: [Synth 8-7071] port 'mem_la_wdata' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/illubaby/RISC-V/picorv32/picorv32.v:2673]
+WARNING: [Synth 8-7071] port 'mem_la_wstrb' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/illubaby/RISC-V/picorv32/picorv32.v:2673]
+WARNING: [Synth 8-7023] instance 'picorv32_core' of module 'picorv32' has 27 connections declared, but only 22 given [/home/illubaby/RISC-V/picorv32/picorv32.v:2673]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_axi' (0#1) [/home/illubaby/RISC-V/picorv32/picorv32.v:2516]
+WARNING: [Synth 8-6014] Unused sequential element mem_la_firstword_reg_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:392]
+WARNING: [Synth 8-6014] Unused sequential element last_mem_valid_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:393]
+WARNING: [Synth 8-6014] Unused sequential element next_insn_opcode_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:433]
+WARNING: [Synth 8-6014] Unused sequential element mem_la_secondword_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:571]
+WARNING: [Synth 8-6014] Unused sequential element prefetched_high_word_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:572]
+WARNING: [Synth 8-6014] Unused sequential element q_ascii_instr_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:778]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_imm_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:779]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_opcode_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:780]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rs1_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:781]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rs2_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:782]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rd_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:783]
+WARNING: [Synth 8-6014] Unused sequential element dbg_next_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:784]
+WARNING: [Synth 8-6014] Unused sequential element dbg_valid_insn_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:787]
+WARNING: [Synth 8-6014] Unused sequential element cached_ascii_instr_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:792]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_imm_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:793]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_opcode_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:795]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rs1_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:798]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rs2_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:799]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rd_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:800]
+WARNING: [Synth 8-6014] Unused sequential element dbg_insn_addr_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:804]
+WARNING: [Synth 8-6014] Unused sequential element clear_prefetched_high_word_q_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1292]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_rinst_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1405]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_rdata_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1406]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_wdata_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1407]
+WARNING: [Synth 8-6014] Unused sequential element alu_out_0_q_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1409]
+WARNING: [Synth 8-6014] Unused sequential element alu_wait_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1412]
+WARNING: [Synth 8-6014] Unused sequential element alu_wait_2_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1413]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1416]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1417]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_valid_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1418]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_valid_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1419]
+WARNING: [Synth 8-6014] Unused sequential element next_irq_pending_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1439]
+WARNING: [Synth 8-6014] Unused sequential element decoder_trigger_q_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1446]
+WARNING: [Synth 8-6014] Unused sequential element decoder_pseudo_trigger_q_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1448]
+WARNING: [Synth 8-6014] Unused sequential element latched_trace_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1464]
+WARNING: [Synth 8-6014] Unused sequential element irq_active_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1470]
+WARNING: [Synth 8-6014] Unused sequential element irq_delay_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1471]
+WARNING: [Synth 8-6014] Unused sequential element irq_mask_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1472]
+WARNING: [Synth 8-6014] Unused sequential element irq_state_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1474]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1476]
+WARNING: [Synth 8-6014] Unused sequential element current_pc_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1494]
+WARNING: [Synth 8-6014] Unused sequential element irq_pending_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1962]
+WARNING: [Synth 8-6014] Unused sequential element trace_valid_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1451]
+WARNING: [Synth 8-6014] Unused sequential element instr_ecall_ebreak_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1085]
+WARNING: [Synth 8-6014] Unused sequential element pcpi_timeout_reg was removed.  [/home/illubaby/RISC-V/picorv32/picorv32.v:1469]
+WARNING: [Synth 8-7129] Port pcpi_wr in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[31] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[30] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[29] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[28] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[27] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[26] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[25] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[24] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[23] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[22] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[21] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[20] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[19] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[18] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[17] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[16] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[15] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[14] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[13] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[12] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[11] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[10] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[9] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[8] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[7] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[6] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[5] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[4] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[3] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[2] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[1] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[0] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_wait in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_ready in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[31] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[30] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[29] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[28] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[27] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[26] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[25] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[24] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[23] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[22] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[21] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[20] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[19] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[18] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[17] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[16] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[15] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[14] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[13] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[12] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[11] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[10] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[9] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[8] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[7] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[6] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[5] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[4] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[3] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[2] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[1] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq[0] in module picorv32 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1838.285 ; gain = 491.652 ; free physical = 2628 ; free virtual = 9034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1856.098 ; gain = 509.465 ; free physical = 2628 ; free virtual = 9034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1864.102 ; gain = 517.469 ; free physical = 2627 ; free virtual = 9034
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'mem_state_reg' in module 'picorv32'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                               00
+                 iSTATE0 |                               01 |                               10
+                  iSTATE |                               10 |                               01
+                 iSTATE1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mem_state_reg' using encoding 'sequential' in module 'picorv32'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1872.109 ; gain = 525.477 ; free physical = 2611 ; free virtual = 9022
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 13    
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 80    
++---RAMs : 
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 24    
+	   6 Input   32 Bit        Muxes := 1     
+	   9 Input   32 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 5     
+	   3 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   7 Input    8 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   9 Input    5 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   9 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 21    
+	   9 Input    1 Bit        Muxes := 25    
+	   7 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design picorv32_axi has port mem_axi_awprot[2] driven by constant 0
+WARNING: [Synth 8-3917] design picorv32_axi has port mem_axi_awprot[1] driven by constant 0
+WARNING: [Synth 8-3917] design picorv32_axi has port mem_axi_awprot[0] driven by constant 0
+WARNING: [Synth 8-3917] design picorv32_axi has port mem_axi_arprot[1] driven by constant 0
+WARNING: [Synth 8-3917] design picorv32_axi has port mem_axi_arprot[0] driven by constant 0
+WARNING: [Synth 8-7129] Port pcpi_wr in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[31] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[30] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[29] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[28] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[27] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[26] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[25] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[24] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[23] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[22] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[21] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[20] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[19] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[18] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[17] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[16] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[15] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[14] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[13] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[12] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[11] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[10] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[9] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[8] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[7] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[6] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[5] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[4] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[3] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[2] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[1] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[0] in module picorv32 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2052.617 ; gain = 705.984 ; free physical = 2415 ; free virtual = 8826
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------+-------------+-----------+----------------------+--------------+
+|Module Name   | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++--------------+-------------+-----------+----------------------+--------------+
+|picorv32_core | cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++--------------+-------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2052.617 ; gain = 705.984 ; free physical = 2415 ; free virtual = 8826
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------+-------------+-----------+----------------------+--------------+
+|Module Name   | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++--------------+-------------+-----------+----------------------+--------------+
+|picorv32_core | cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++--------------+-------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2052.617 ; gain = 705.984 ; free physical = 2414 ; free virtual = 8827
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2052.617 ; gain = 705.984 ; free physical = 2414 ; free virtual = 8825
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2052.617 ; gain = 705.984 ; free physical = 2414 ; free virtual = 8825
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2052.617 ; gain = 705.984 ; free physical = 2414 ; free virtual = 8825
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2052.617 ; gain = 705.984 ; free physical = 2414 ; free virtual = 8825
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2052.617 ; gain = 705.984 ; free physical = 2414 ; free virtual = 8825
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2052.617 ; gain = 705.984 ; free physical = 2414 ; free virtual = 8825
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    83|
+|3     |LUT1     |     4|
+|4     |LUT2     |    96|
+|5     |LUT3     |    99|
+|6     |LUT4     |   274|
+|7     |LUT5     |   155|
+|8     |LUT6     |   386|
+|9     |RAM32M   |    10|
+|10    |RAM32X1D |     4|
+|11    |FDRE     |   567|
+|12    |FDSE     |    12|
+|13    |IBUF     |    39|
+|14    |OBUF     |   210|
+|15    |OBUFT    |    68|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------+---------------------+------+
+|      |Instance        |Module               |Cells |
++------+----------------+---------------------+------+
+|1     |top             |                     |  2008|
+|2     |  axi_adapter   |picorv32_axi_adapter |     7|
+|3     |  picorv32_core |picorv32             |  1683|
++------+----------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2052.617 ; gain = 705.984 ; free physical = 2414 ; free virtual = 8825
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 199 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2052.617 ; gain = 705.984 ; free physical = 2414 ; free virtual = 8825
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2052.625 ; gain = 705.984 ; free physical = 2414 ; free virtual = 8825
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2052.625 ; gain = 0.000 ; free physical = 2702 ; free virtual = 9113
+INFO: [Netlist 29-17] Analyzing 97 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'picorv32_axi' is not ideal for floorplanning, since the cellview 'picorv32' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2135.457 ; gain = 0.000 ; free physical = 2685 ; free virtual = 9109
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete | Checksum: e1d47ae1
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 166 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2135.492 ; gain = 788.859 ; free physical = 2684 ; free virtual = 9108
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1395.962; main = 1395.962; forked = 0.000
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2135.461; main = 2135.461; forked = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2159.469 ; gain = 0.000 ; free physical = 2683 ; free virtual = 9108
+INFO: [Common 17-1381] The checkpoint '/home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32/Picorv32.runs/synth_1/picorv32_axi.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file picorv32_axi_utilization_synth.rpt -pb picorv32_axi_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  8 00:16:43 2024...

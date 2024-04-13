@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Apr  8 00:16:26 2024
+# Process ID: 158943
+# Current directory: /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32/Picorv32.runs/synth_1
+# Command line: vivado -log picorv32_axi.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source picorv32_axi.tcl
+# Log file: /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32/Picorv32.runs/synth_1/picorv32_axi.vds
+# Journal file: /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32/Picorv32.runs/synth_1/vivado.jou
+# Running On: illubaby-ASUS-TUF-Gaming-F15, OS: Linux, CPU Frequency: 1747.761 MHz, CPU Physical cores: 14, Host memory: 16361 MB
+#-----------------------------------------------------------
+source picorv32_axi.tcl -notrace
