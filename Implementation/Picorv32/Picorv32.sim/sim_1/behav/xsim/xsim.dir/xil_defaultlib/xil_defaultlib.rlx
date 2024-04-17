@@ -1,7 +1,0 @@
-0.7
-2020.2
-Oct 13 2023
-20:21:30
-/home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32/Picorv32.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
-/home/illubaby/RISC-V/picorv32/picorv32.v,1710330653,verilog,,/home/illubaby/RISC-V/picorv32/testbench.v,,picorv32;picorv32_axi;picorv32_axi_adapter;picorv32_pcpi_div;picorv32_pcpi_fast_mul;picorv32_pcpi_mul;picorv32_regs;picorv32_wb,,,,,,,,
-/home/illubaby/RISC-V/picorv32/testbench.v,1710330653,verilog,,,,axi4_memory;picorv32_wrapper;testbench,,,,,,,,

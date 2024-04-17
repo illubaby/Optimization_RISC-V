@@ -1,0 +1,1160 @@
+
+*** Running vivado
+    with args -log design_1_al_ultra96v2_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_al_ultra96v2_0_1.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2.2 (64-bit)
+  **** SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+  **** IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+  **** SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_al_ultra96v2_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 567.656 ; gain = 245.324
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.cache/ip 
+Command: synth_design -top design_1_al_ultra96v2_0_1 -part xczu3eg-sbva484-1-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5720
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1889.750 ; gain = 375.285
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'mem_raddr' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:280]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'mem_renb' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:281]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'bpbuf_ld_wrn' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:283]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'bpbuf_enb' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:284]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ibuf_di_revert' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:286]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ibuf_do_revert' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:287]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ibuf_dens_wstrb' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:288]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ibuf_conv_wstrb' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:289]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ibuf_ld_wrn' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:290]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ibuf_bank_sel' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:291]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ibuf_conv_fi_load' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:292]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ibuf_conv_se_load' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:293]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ibuf_enb' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:294]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'wbuf_wstrb' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:296]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'wbuf_ld_wrn' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:297]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'wbuf_bank_sel' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:298]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'wbuf_enb' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:299]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'idemux_sel' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:301]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ireg_enb' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:302]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'wdemux_sel' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:304]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'wreg_enb' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:305]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'pu_matrix_conv_dir' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:307]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'acc_matrix_enb' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:309]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'acc_matrix_bps_load' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:310]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'cp_enb' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:312]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'cp_clr' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:313]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'RDATA_rdy' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:316]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'RDATA_fin' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:317]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'RDATA_is_out_fin' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:318]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'RDATA_ps_addr' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:319]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'RDATA_o_addr' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:320]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'RDATA_o_quant_sel' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:321]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'i_base_addr' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:59]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'kw_base_addr' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:62]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'o_base_addr' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:65]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'b_base_addr' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:68]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ps_base_addr' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:71]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'cfg_layer_typ' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:75]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'cfg_act_func_typ' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:76]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'stride_width' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:77]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'stride_height' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:78]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'weight_kernel_patch_width' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:81]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'weight_kernel_patch_height' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:82]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'kernel_ifm_depth' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:85]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'nok_ofm_depth' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:86]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ifm_width' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:89]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ifm_height' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:90]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ofm_width' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:93]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ofm_height' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:94]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'input2D_size' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:98]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'output2D_size' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:99]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'kernel3D_size' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:102]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'input_offset' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:115]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'output_offset' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:118]
+WARNING: [Synth 8-6901] identifier 'cp_data_0' is used before its declaration [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:27]
+WARNING: [Synth 8-6901] identifier 'cp_data_1' is used before its declaration [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:27]
+WARNING: [Synth 8-6901] identifier 'cp_data_0' is used before its declaration [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:27]
+WARNING: [Synth 8-6901] identifier 'cp_data_1' is used before its declaration [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:27]
+WARNING: [Synth 8-6901] identifier 'cp_data_2' is used before its declaration [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:30]
+WARNING: [Synth 8-6901] identifier 'cp_data_2' is used before its declaration [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:30]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'rdy' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_mac.v:80]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'mac_load' is not allowed [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_mac.v:80]
+INFO: [Synth 8-11241] undeclared symbol 'cpu_iomem_ready', assumed default net type 'wire' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:115]
+INFO: [Synth 8-11241] undeclared symbol 'al_accel_iomem_ready', assumed default net type 'wire' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:116]
+INFO: [Synth 8-11241] undeclared symbol 'al_accel_flow_resetn', assumed default net type 'wire' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:391]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'picosoc_regs' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picosoc.v:252]
+INFO: [Synth 8-9937] previous definition of design element 'picosoc_regs' is here [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:601]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'picosoc_dmem' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picosoc.v:282]
+INFO: [Synth 8-9937] previous definition of design element 'picosoc_dmem' is here [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:631]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'picosoc_imem' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picosoc.v:303]
+INFO: [Synth 8-9937] previous definition of design element 'picosoc_imem' is here [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:652]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'smooth_rdy_sig_module' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_ultra96v2.v:163]
+INFO: [Synth 8-9937] previous definition of design element 'smooth_rdy_sig_module' is here [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/ultra96v2.v:163]
+INFO: [Synth 8-6157] synthesizing module 'design_1_al_ultra96v2_0_1' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_al_ultra96v2_0_1/synth/design_1_al_ultra96v2_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'al_ultra96v2' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_ultra96v2.v:11]
+INFO: [Synth 8-6157] synthesizing module 'smooth_rdy_sig_module' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_ultra96v2.v:132]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_ultra96v2.v:149]
+INFO: [Synth 8-6155] done synthesizing module 'smooth_rdy_sig_module' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_ultra96v2.v:132]
+INFO: [Synth 8-6157] synthesizing module 'al_picosoc' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:15]
+INFO: [Synth 8-6157] synthesizing module 'picorv32' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:63]
+	Parameter ENABLE_COUNTERS bound to: 1'b1 
+	Parameter BARREL_SHIFTER bound to: 1'b1 
+	Parameter COMPRESSED_ISA bound to: 1'b1 
+	Parameter ENABLE_MUL bound to: 1'b1 
+	Parameter ENABLE_FAST_MUL bound to: 1'b0 
+	Parameter ENABLE_DIV bound to: 1'b1 
+	Parameter ENABLE_IRQ bound to: 1'b1 
+	Parameter ENABLE_IRQ_QREGS bound to: 1'b0 
+	Parameter PROGADDR_RESET bound to: 1048576 - type: integer 
+	Parameter PROGADDR_IRQ bound to: 0 - type: integer 
+	Parameter STACKADDR bound to: 32'b00000000000000100000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'picorv32_pcpi_mul' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:2193]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:2224]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_pcpi_mul' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:2193]
+INFO: [Synth 8-6157] synthesizing module 'picorv32_pcpi_div' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:2416]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:2441]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_pcpi_div' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:2416]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:332]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:440]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:456]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:510]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:438]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:903]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:985]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:901]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1310]
+INFO: [Synth 8-6157] synthesizing module 'picosoc_regs' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picosoc.v:236]
+INFO: [Synth 8-6155] done synthesizing module 'picosoc_regs' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picosoc.v:236]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1493]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1579]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1579]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:63]
+WARNING: [Synth 8-7071] port 'trap' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'mem_la_read' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'mem_la_write' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'mem_la_addr' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'mem_la_wdata' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'mem_la_wstrb' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_valid' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_insn' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_rs1' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_rs2' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_wr' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_rd' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_wait' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_ready' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'eoi' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'trace_valid' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'trace_data' of module 'picorv32' is unconnected for instance 'cpu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7023] instance 'cpu' of module 'picorv32' has 27 connections declared, but only 10 given [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:212]
+INFO: [Synth 8-6157] synthesizing module 'pico_switch_read_bus' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:512]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:561]
+INFO: [Synth 8-6155] done synthesizing module 'pico_switch_read_bus' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:512]
+INFO: [Synth 8-6157] synthesizing module 'picosoc_imem' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picosoc.v:284]
+	Parameter IMEM_SIZE bound to: 64'b0000000000000000000000000000000000000000000000010000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'picosoc_imem' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picosoc.v:284]
+INFO: [Synth 8-6157] synthesizing module 'simpleuart' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/simpleuart.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'simpleuart' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/simpleuart.v:20]
+INFO: [Synth 8-6157] synthesizing module 'pico_switch_write_bus' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:426]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:484]
+INFO: [Synth 8-6155] done synthesizing module 'pico_switch_write_bus' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:426]
+INFO: [Synth 8-6157] synthesizing module 'picosoc_dmem' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picosoc.v:255]
+	Parameter DMEM_SIZE bound to: 64'b0000000000000000000000000000000000000000000000001000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'picosoc_dmem' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picosoc.v:255]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_pico_ctrl' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_accel_pico_ctrl.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_accel_pico_ctrl.v:122]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_pico_ctrl' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_accel_pico_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_bpbuf' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_bpbuf.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_bpbuf' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_bpbuf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_wbuf' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_wbuf.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_wbuf.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_wbuf' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_wbuf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_ibuf' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:68]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:160]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:66]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:208]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:277]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:323]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:369]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:275]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:64]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:418]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:538]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_ibuf' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_pu_matrix' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_pu_matrix.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_wdemux' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_wdemux.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_wdemux.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_wdemux' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_wdemux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_idemux' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_idemux.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_idemux.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_idemux' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_idemux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_pu_array' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_pu_array.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_pu_array.v:106]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_wreg' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_wreg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_wreg' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_wreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_ireg' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ireg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_ireg' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_ireg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_pu' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_pu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_lpureg' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_lpureg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_lpureg' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_lpureg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_lut' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_lut.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_lut' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_lut.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_mac' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_mac.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_mac.v:157]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_mac' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_mac.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_pu' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_pu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_pu_array' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_pu_array.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_pu_matrix' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_pu_matrix.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_acc_matrix' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_acc_matrix.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_acc_matrix' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_acc_matrix.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_obuf' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_obuf.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_obuf' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_obuf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_elw_unit' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_elw_unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_quant_lut' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_quant_lut.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_quant_lut' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_quant_lut.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_quant_unit' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_quant_unit.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_quant_unit.v:206]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_quant_unit.v:242]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_quant_unit' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_quant_unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_act_func_unit' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_act_func_unit.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_act_func_unit.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_act_func_unit' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_act_func_unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_cp_unit' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_cp_unit' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_elw_unit' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_elw_unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_config_regs' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:154]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:183]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_config_regs' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_flow_ctrl' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_flow_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_RDATA_ctrl' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:331]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:346]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:356]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:366]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:403]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:414]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:464]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:506]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:389]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:610]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:694]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:384]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:894]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:963]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:800]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1142]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1282]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:795]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1448]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1459]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1470]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1481]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1492]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1503]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1514]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1525]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1536]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1443]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1551]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1559]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1567]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1575]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1583]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1591]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1599]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1607]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1615]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1549]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1631]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1640]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1649]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1628]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1665]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1688]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1701]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1725]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1750]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1881]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1949]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2008]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2085]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1747]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2148]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2172]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2187]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2199]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2214]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2145]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2242]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2239]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1432]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2329]
+INFO: [Common 17-14] Message 'Synth 8-155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_RDATA_ctrl' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_COMPS_ctrl' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_COMPS_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_COMPS_ctrl' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_COMPS_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_WBACK_ctrl' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_WBACK_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_WBACK_ctrl' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_WBACK_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_flow_ctrl' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_flow_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_picosoc' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_picosoc.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'al_ultra96v2' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/al_ultra96v2.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_al_ultra96v2_0_1' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_al_ultra96v2_0_1/synth/design_1_al_ultra96v2_0_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element pcpi_ready_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:2305]
+WARNING: [Synth 8-6014] Unused sequential element pcpi_wr_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:2462]
+WARNING: [Synth 8-6014] Unused sequential element next_insn_opcode_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:434]
+WARNING: [Synth 8-6014] Unused sequential element q_ascii_instr_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:778]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_imm_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:779]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_opcode_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:780]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rs1_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:781]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rs2_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:782]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rd_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:783]
+WARNING: [Synth 8-6014] Unused sequential element dbg_next_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:784]
+WARNING: [Synth 8-6014] Unused sequential element dbg_valid_insn_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:787]
+WARNING: [Synth 8-6014] Unused sequential element cached_ascii_instr_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:792]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_imm_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:793]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_opcode_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:795]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rs1_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:798]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rs2_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:799]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rd_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:800]
+WARNING: [Synth 8-6014] Unused sequential element dbg_insn_addr_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:804]
+WARNING: [Synth 8-6014] Unused sequential element is_sll_srl_sra_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1108]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_rinst_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1402]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_rdata_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1403]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_wdata_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1404]
+WARNING: [Synth 8-6014] Unused sequential element alu_out_0_q_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1406]
+WARNING: [Synth 8-6014] Unused sequential element alu_wait_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1409]
+WARNING: [Synth 8-6014] Unused sequential element alu_wait_2_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1410]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1413]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1414]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_valid_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1415]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_valid_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1416]
+WARNING: [Synth 8-6014] Unused sequential element next_irq_pending_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1436]
+WARNING: [Synth 8-6014] Unused sequential element decoder_trigger_q_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1443]
+WARNING: [Synth 8-6014] Unused sequential element decoder_pseudo_trigger_q_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1445]
+WARNING: [Synth 8-6014] Unused sequential element latched_trace_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1461]
+WARNING: [Synth 8-6014] Unused sequential element current_pc_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/picorv32.v:1491]
+WARNING: [Synth 8-6014] Unused sequential element kw_x_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:767]
+WARNING: [Synth 8-6014] Unused sequential element kw_y_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:768]
+WARNING: [Synth 8-6014] Unused sequential element ou_y_reg was removed.  [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:773]
+WARNING: [Synth 8-7129] Port COMPS_start in module al_accel_WBACK_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[15] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[14] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[13] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[12] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[11] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[10] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[9] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[8] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[7] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[6] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[5] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[4] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[3] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[2] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[1] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[0] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[31] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[30] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[29] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[28] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[27] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[26] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[25] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[24] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[23] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[22] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[21] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[20] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[19] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[18] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[17] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[16] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[15] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[14] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[13] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[12] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[11] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[10] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[9] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[8] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[31] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[30] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[29] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[28] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[27] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[26] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[25] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[24] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[23] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[22] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[21] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[20] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[19] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[18] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[17] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[16] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[15] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[14] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[13] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[12] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[11] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[10] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[9] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[17] in module picosoc_dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[16] in module picosoc_dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[15] in module picosoc_dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waddr[17] in module picosoc_dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waddr[16] in module picosoc_dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waddr[15] in module picosoc_dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[31] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[30] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[29] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[28] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[27] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[26] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[25] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[24] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[23] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[22] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[21] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[20] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[19] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[18] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[17] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[16] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[15] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[14] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[13] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[12] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[11] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[10] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[9] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[8] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[17] in module picosoc_imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[16] in module picosoc_imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waddr[17] in module picosoc_imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waddr[16] in module picosoc_imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waddr[5] in module picosoc_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr1[5] in module picosoc_regs is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2096.625 ; gain = 582.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2096.625 ; gain = 582.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2096.625 ; gain = 582.160
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.613 . Memory (MB): peak = 2096.625 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2171.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.710 . Memory (MB): peak = 2269.445 ; gain = 98.160
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2269.445 ; gain = 754.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2269.445 ; gain = 754.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2269.445 ; gain = 754.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'smooth_rdy_sig_module'
+INFO: [Synth 8-802] inferred FSM for state register 'mem_state_reg' in module 'picorv32'
+INFO: [Synth 8-802] inferred FSM for state register 'irq_state_reg' in module 'picorv32'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'al_accel_pico_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'al_accel_mac'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'al_accel_quant_unit'
+INFO: [Synth 8-802] inferred FSM for state register 'RDATA_imini_state_reg' in module 'al_accel_RDATA_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'COMPS_gstate_reg' in module 'al_accel_COMPS_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   START |                              001 |                               00
+                    WAIT |                              010 |                               01
+                 TRIGGER |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'smooth_rdy_sig_module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                              001 |                               00
+                 iSTATE1 |                              010 |                               01
+                  iSTATE |                              100 |                               10
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'irq_state_reg' using encoding 'one-hot' in module 'picorv32'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                               00
+                 iSTATE0 |                               01 |                               10
+                  iSTATE |                               10 |                               01
+                 iSTATE1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mem_state_reg' using encoding 'sequential' in module 'picorv32'
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "picosoc_imem:/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "picosoc_imem:/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "picosoc_imem:/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "picosoc_imem:/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "picosoc_imem:/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "picosoc_imem:/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "picosoc_imem:/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 1 for RAM "picosoc_imem:/memory_reg"
+WARNING: [Synth 8-6841] Block RAM (mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (15) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "picosoc_dmem:/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "picosoc_dmem:/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "picosoc_dmem:/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "picosoc_dmem:/mem_reg"
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     RST |                             0001 |                               00
+                     CFG |                             0010 |                               01
+                     RUN |                             0100 |                               10
+                     FIN |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'al_accel_pico_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    LOAD |                             0000 |                             0000
+                   ONE_C |                             0001 |                             0001
+                   TWO_C |                             0010 |                             0010
+                 THREE_C |                             0011 |                             0011
+                  FOUR_C |                             0100 |                             0100
+                  FIVE_C |                             0101 |                             0101
+                   SIX_C |                             0110 |                             0110
+                 SEVEN_C |                             0111 |                             0111
+                 EIGHT_C |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'al_accel_mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    LOAD |                             0000 |                             0000
+                   ONE_C |                             0001 |                             0001
+                   TWO_C |                             0010 |                             0010
+                 THREE_C |                             0011 |                             0011
+                  FOUR_C |                             0100 |                             0100
+                  FIVE_C |                             0101 |                             0101
+                   SIX_C |                             0110 |                             0110
+                 SEVEN_C |                             0111 |                             0111
+                 EIGHT_C |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'al_accel_quant_unit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 I_START |                              000 |                             0000
+            I_SHIFT_LEFT |                              001 |                             0001
+                  iSTATE |                              010 |                             0101
+              I_DOWN_R2L |                              011 |                             0010
+           I_SHIFT_RIGHT |                              100 |                             0011
+                 iSTATE0 |                              101 |                             0110
+              I_DOWN_L2R |                              110 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'RDATA_imini_state_reg' using encoding 'sequential' in module 'al_accel_RDATA_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 G_START |                              000 |                              000
+               G_MAC_ENB |                              001 |                              001
+               G_ACC_ENB |                              010 |                              010
+                  G_WAIT |                              011 |                              011
+                G_FINISH |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'COMPS_gstate_reg' using encoding 'sequential' in module 'al_accel_COMPS_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:36 . Memory (MB): peak = 2269.445 ; gain = 754.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 3     
+	   2 Input   63 Bit       Adders := 4     
+	   2 Input   38 Bit       Adders := 3     
+	   2 Input   37 Bit       Adders := 9     
+	   2 Input   36 Bit       Adders := 12    
+	   2 Input   35 Bit       Adders := 6     
+	   2 Input   34 Bit       Adders := 3     
+	   2 Input   32 Bit       Adders := 335   
+	   3 Input   32 Bit       Adders := 2     
+	   4 Input   32 Bit       Adders := 1     
+	  10 Input   32 Bit       Adders := 3     
+	   2 Input   30 Bit       Adders := 8     
+	   3 Input   30 Bit       Adders := 1     
+	   3 Input   17 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 4     
+	   2 Input   16 Bit       Adders := 15    
+	   3 Input   16 Bit       Adders := 3     
+	   4 Input   16 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 81    
+	   2 Input   10 Bit       Adders := 81    
+	   2 Input    8 Bit       Adders := 81    
+	   3 Input    8 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 5     
+	   3 Input    5 Bit       Adders := 16    
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 15    
+	   2 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 81    
++---Registers : 
+	               72 Bit    Registers := 3     
+	               64 Bit    Registers := 7     
+	               63 Bit    Registers := 1     
+	               48 Bit    Registers := 9     
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 341   
+	               16 Bit    Registers := 16    
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 231   
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 11    
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 13    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 126   
++---RAMs : 
+	            2048K Bit	(65536 X 32 bit)          RAMs := 1     
+	            1024K Bit	(32768 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   72 Bit        Muxes := 9     
+	   7 Input   72 Bit        Muxes := 3     
+	   4 Input   72 Bit        Muxes := 12    
+	   9 Input   64 Bit        Muxes := 3     
+	   4 Input   64 Bit        Muxes := 3     
+	   2 Input   64 Bit        Muxes := 4     
+	   2 Input   63 Bit        Muxes := 2     
+	   7 Input   48 Bit        Muxes := 12    
+	   2 Input   48 Bit        Muxes := 87    
+	   4 Input   48 Bit        Muxes := 72    
+	   2 Input   32 Bit        Muxes := 205   
+	   9 Input   32 Bit        Muxes := 35    
+	   7 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 41    
+	  10 Input   32 Bit        Muxes := 10    
+	   5 Input   32 Bit        Muxes := 9     
+	   6 Input   32 Bit        Muxes := 7     
+	   3 Input   32 Bit        Muxes := 6     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 3     
+	   2 Input   27 Bit        Muxes := 3     
+	   4 Input   27 Bit        Muxes := 3     
+	  10 Input   27 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   4 Input   24 Bit        Muxes := 4     
+	   7 Input   24 Bit        Muxes := 3     
+	  10 Input   24 Bit        Muxes := 3     
+	   2 Input   21 Bit        Muxes := 1     
+	   4 Input   21 Bit        Muxes := 1     
+	   5 Input   16 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 18    
+	  10 Input   16 Bit        Muxes := 7     
+	   4 Input   16 Bit        Muxes := 11    
+	   6 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 81    
+	   2 Input   10 Bit        Muxes := 3     
+	   2 Input    9 Bit        Muxes := 4     
+	   4 Input    9 Bit        Muxes := 4     
+	   6 Input    9 Bit        Muxes := 1     
+	  10 Input    9 Bit        Muxes := 2     
+	   5 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 164   
+	   4 Input    8 Bit        Muxes := 100   
+	   3 Input    8 Bit        Muxes := 2     
+	   9 Input    8 Bit        Muxes := 2     
+	   4 Input    7 Bit        Muxes := 1     
+	  19 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 79    
+	   7 Input    6 Bit        Muxes := 13    
+	   6 Input    6 Bit        Muxes := 1     
+	  10 Input    6 Bit        Muxes := 4     
+	   4 Input    6 Bit        Muxes := 44    
+	   3 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 40    
+	   4 Input    5 Bit        Muxes := 6     
+	  10 Input    5 Bit        Muxes := 3     
+	   5 Input    5 Bit        Muxes := 5     
+	   6 Input    5 Bit        Muxes := 3     
+	   8 Input    5 Bit        Muxes := 2     
+	   9 Input    5 Bit        Muxes := 2     
+	  19 Input    5 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 33    
+	   2 Input    4 Bit        Muxes := 46    
+	   5 Input    4 Bit        Muxes := 3     
+	   6 Input    4 Bit        Muxes := 2     
+	  10 Input    4 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 13    
+	   3 Input    4 Bit        Muxes := 3     
+	   7 Input    4 Bit        Muxes := 1     
+	   9 Input    3 Bit        Muxes := 27    
+	   2 Input    3 Bit        Muxes := 56    
+	   7 Input    3 Bit        Muxes := 4     
+	  10 Input    3 Bit        Muxes := 12    
+	   4 Input    3 Bit        Muxes := 19    
+	   6 Input    3 Bit        Muxes := 5     
+	  17 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 3     
+	   8 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 21    
+	   4 Input    2 Bit        Muxes := 13    
+	   5 Input    2 Bit        Muxes := 3     
+	   6 Input    2 Bit        Muxes := 3     
+	  10 Input    2 Bit        Muxes := 8     
+	   7 Input    2 Bit        Muxes := 2     
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 227   
+	   9 Input    1 Bit        Muxes := 133   
+	   4 Input    1 Bit        Muxes := 76    
+	  10 Input    1 Bit        Muxes := 34    
+	   5 Input    1 Bit        Muxes := 32    
+	   6 Input    1 Bit        Muxes := 18    
+	   8 Input    1 Bit        Muxes := 7     
+	  13 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 9     
+	  18 Input    1 Bit        Muxes := 87    
+	   3 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[31]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[31]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[31]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[31]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[0]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[1]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[2]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[3]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[4]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[5]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[6]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[7]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[8]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[9]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[10]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[11]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[11]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[11]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[11]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[12]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[12]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[12]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[12]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[13]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[14]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[13]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[13]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[13]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[14]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[14]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[14]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[14]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[15]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[15]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[15]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[15]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[16]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[17]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[16]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[17]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[16]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[16]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[17]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[18]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[17]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[18]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[17]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[17]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[18]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[19]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[18]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[19]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[18]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[18]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[19]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[20]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[19]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[20]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[19]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[19]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[20]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[21]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[20]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[21]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[20]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[20]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[21]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[22]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[21]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[22]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[21]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[21]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[22]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[23]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[22]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[23]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[22]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[22]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[23]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[24]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[23]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[24]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[23]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[23]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[24]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[25]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[24]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[25]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[24]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[24]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[25]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[26]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[25]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[26]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[25]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[25]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[26]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[27]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[26]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[27]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[26]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[26]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[27]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[28]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[27]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[27]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[27]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[28]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[28]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[28]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[28]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_4_reg[29]' (FDRE) to 'pu_2/lut_2/lut_data_4_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_2_reg[29]' (FDRE) to 'pu_2/lut_2/lut_data_2_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_1_reg[29]' (FDRE) to 'pu_2/lut_2/lut_data_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_2/lut_data_0_reg[29]' (FDRE) to 'pu_2/lut_2/lut_data_0_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pu_2/\lut_2/lut_data_0_reg[30] )
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_1/lut_data_4_reg[31]' (FDRE) to 'pu_2/lut_1/lut_data_4_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_1/lut_data_2_reg[31]' (FDRE) to 'pu_2/lut_1/lut_data_2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_1/lut_data_1_reg[31]' (FDRE) to 'pu_2/lut_1/lut_data_1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_1/lut_data_0_reg[31]' (FDRE) to 'pu_2/lut_1/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_1/lut_data_0_reg[0]' (FDRE) to 'pu_2/lut_1/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_1/lut_data_0_reg[1]' (FDRE) to 'pu_2/lut_1/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_1/lut_data_0_reg[2]' (FDRE) to 'pu_2/lut_1/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_1/lut_data_0_reg[3]' (FDRE) to 'pu_2/lut_1/lut_data_0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pu_2/lut_1/lut_data_0_reg[4]' (FDRE) to 'pu_2/lut_1/lut_data_0_reg[30]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pu_2/\lut_1/lut_data_0_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pu_2/\lut_0/lut_data_0_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pu_1/\lut_2/lut_data_0_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pu_1/\lut_1/lut_data_0_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pu_1/\lut_0/lut_data_0_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pu_0/\lut_2/lut_data_0_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pu_0/\lut_1/lut_data_0_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pu_0/\lut_0/lut_data_0_reg[30] )
+INFO: [Synth 8-5544] ROM "wreg_enb" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wreg_enb" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wreg_enb" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wreg_enb" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wreg_enb" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wreg_enb" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_di_revert" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wbuf_enb" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_bank_sel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ireg_enb" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bpbuf_enb" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wreg_enb" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ibuf_bank_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "wbuf_bank_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RDATA_wmini_state_reg[3] )
+INFO: [Synth 8-5544] ROM "ibuf_2/buf_b0_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_2/buf_b2_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_2/buf_b0_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_2/buf_b1_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_2/buf_b1_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_2/buf_b1_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_2/buf_b0_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_2/buf_b0_valid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "buf_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "buf_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "buf_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "buf_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "buf_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "buf_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_2/buf_b0_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_2/buf_b2_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_2/buf_b1_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_2/buf_b1_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuf_2/buf_b1_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_rdata_q2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_rdata_q2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-6904] The RAM "cpu/cpuregs/regs_reg" of size (depth=32 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cpu/cpuregs/regs_reg" of size (depth=32 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "al_picosoc__GC0/imem/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "al_picosoc__GC0/imem/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "al_picosoc__GC0/imem/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "al_picosoc__GC0/imem/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "al_picosoc__GC0/imem/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "al_picosoc__GC0/imem/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "al_picosoc__GC0/imem/memory_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 1 for RAM "al_picosoc__GC0/imem/memory_reg"
+WARNING: [Synth 8-6841] Block RAM (dmem/mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (15) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "al_picosoc__GC0/dmem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "al_picosoc__GC0/dmem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "al_picosoc__GC0/dmem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "al_picosoc__GC0/dmem/mem_reg"
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\simpleuart/send_pattern_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/pcpi_mul/\rdx_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\decoded_imm_j_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/instr_getq_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\cpu_state_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\mem_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\reg_pc_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:02:05 . Memory (MB): peak = 2269.445 ; gain = 754.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------------+------------+---------------+----------------+
+|Module Name         | RTL Object | Depth x Width | Implemented As | 
++--------------------+------------+---------------+----------------+
+|al_accel_RDATA_ctrl | ibuf_enb   | 32x3          | LUT            | 
++--------------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name     | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|al_picosoc__GC0 | imem/memory_reg | 64 K x 32(READ_FIRST)  | W |   | 64 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 58     | 8,8,8,8,8,8,8,2 | 
+|al_picosoc__GC0 | dmem/mem_reg    | 32 K x 32(READ_FIRST)  | W |   | 32 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 8,8,8,8         | 
++----------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------------+-----------+----------------------+---------------+
+|cpu         | cpuregs/regs_reg | Implied   | 32 x 32              | RAM32M16 x 6  | 
++------------+------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:02:16 . Memory (MB): peak = 2642.449 ; gain = 1127.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:02:17 . Memory (MB): peak = 2651.418 ; gain = 1136.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name     | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|al_picosoc__GC0 | imem/memory_reg | 64 K x 32(READ_FIRST)  | W |   | 64 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 58     | 8,8,8,8,8,8,8,2 | 
+|al_picosoc__GC0 | dmem/mem_reg    | 32 K x 32(READ_FIRST)  | W |   | 32 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 8,8,8,8         | 
++----------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++------------+------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------------+-----------+----------------------+---------------+
+|cpu         | cpuregs/regs_reg | Implied   | 32 x 32              | RAM32M16 x 6  | 
++------------+------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance soci_4/inst/soc/imem/memory_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soci_4/inst/soc/imem/memory_reg_bram_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soci_4/inst/soc/imem/memory_reg_bram_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soci_4/inst/soc/imem/memory_reg_bram_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soci_4/inst/soc/imem/memory_reg_bram_39 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soci_4/inst/soc/imem/memory_reg_bram_47 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soci_4/inst/soc/imem/memory_reg_bram_55 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soci_4/inst/soc/imem/memory_reg_bram_57 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soci_4/inst/soc/dmem/mem_reg_0_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soci_4/inst/soc/dmem/mem_reg_1_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soci_4/inst/soc/dmem/mem_reg_2_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soci_4/inst/soc/dmem/mem_reg_3_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:02:31 . Memory (MB): peak = 2676.402 ; gain = 1161.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_39 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_47 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_55 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_57 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/dmem/mem_reg_0_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/dmem/mem_reg_1_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/dmem/mem_reg_2_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/dmem/mem_reg_3_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:02:37 . Memory (MB): peak = 2723.930 ; gain = 1209.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:02:37 . Memory (MB): peak = 2723.930 ; gain = 1209.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:02:40 . Memory (MB): peak = 2723.930 ; gain = 1209.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:02:40 . Memory (MB): peak = 2723.930 ; gain = 1209.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:02:41 . Memory (MB): peak = 2723.930 ; gain = 1209.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:02:41 . Memory (MB): peak = 2723.930 ; gain = 1209.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |  1475|
+|2     |LUT1     |   822|
+|3     |LUT2     |  3792|
+|4     |LUT3     |  2386|
+|5     |LUT4     |  2176|
+|6     |LUT5     |  5153|
+|7     |LUT6     |  9820|
+|8     |MUXF7    |   389|
+|9     |MUXF8    |    21|
+|10    |RAM32M   |     2|
+|11    |RAM32M16 |     4|
+|12    |RAMB36E2 |    90|
+|23    |FDRE     | 11995|
+|24    |FDSE     |    60|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:02:41 . Memory (MB): peak = 2723.930 ; gain = 1209.465
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 194 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:02:35 . Memory (MB): peak = 2723.930 ; gain = 1036.645
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:02:43 . Memory (MB): peak = 2723.930 ; gain = 1209.465
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.524 . Memory (MB): peak = 2739.926 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1891 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2786.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 4 instances
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 32e29d25
+INFO: [Common 17-83] Releasing license: Synthesis
+428 Infos, 222 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:03:16 . Memory (MB): peak = 2786.223 ; gain = 2171.957
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 168 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 2786.223 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/design_1_al_ultra96v2_0_1_synth_1/design_1_al_ultra96v2_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_al_ultra96v2_0_1_utilization_synth.rpt -pb design_1_al_ultra96v2_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 15 16:15:41 2024...

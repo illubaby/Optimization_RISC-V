@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Mon Apr 15 17:58:45 2024
+# Process ID: 25092
+# Current directory: C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/impl_1\vivado.jou
+# Running On: TUF-F15, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16781 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

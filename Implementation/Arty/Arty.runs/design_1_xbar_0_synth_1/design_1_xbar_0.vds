@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Mon Apr 15 16:23:14 2024
+# Process ID: 30896
+# Current directory: C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/design_1_xbar_0_synth_1
+# Command line: vivado.exe -log design_1_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+# Log file: C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/design_1_xbar_0_synth_1/design_1_xbar_0.vds
+# Journal file: C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/design_1_xbar_0_synth_1\vivado.jou
+# Running On: TUF-F15, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16781 MB
+#-----------------------------------------------------------
+source design_1_xbar_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 567.879 ; gain = 244.867
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 0ea653c2ecb6f612 to dir: C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/design_1_xbar_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.cache/ip/2023.2.2/0/e/0ea653c2ecb6f612/design_1_xbar_0.dcp to C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.cache/ip/2023.2.2/0/e/0ea653c2ecb6f612/design_1_xbar_0_sim_netlist.v to C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/design_1_xbar_0_synth_1/design_1_xbar_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.cache/ip/2023.2.2/0/e/0ea653c2ecb6f612/design_1_xbar_0_sim_netlist.vhdl to C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/design_1_xbar_0_synth_1/design_1_xbar_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.cache/ip/2023.2.2/0/e/0ea653c2ecb6f612/design_1_xbar_0_stub.v to C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/design_1_xbar_0_synth_1/design_1_xbar_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.cache/ip/2023.2.2/0/e/0ea653c2ecb6f612/design_1_xbar_0_stub.vhdl to C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/design_1_xbar_0_synth_1/design_1_xbar_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_xbar_0, cache-ID = 0ea653c2ecb6f612.
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 15 16:23:35 2024...

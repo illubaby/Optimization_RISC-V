@@ -1,2 +1,0 @@
-Time resolution is 1 ps
-WARNING: File firmware/firmware.hex referenced on /home/illubaby/RISC-V/picorv32/picorv32.v at line 189 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.

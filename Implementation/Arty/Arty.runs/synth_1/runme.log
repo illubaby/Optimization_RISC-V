@@ -1,0 +1,559 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2.2 (64-bit)
+  **** SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+  **** IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+  **** SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 567.727 ; gain = 244.379
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xczu3eg-sbva484-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23648
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1918.793 ; gain = 376.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_al_ultra96v2_0_1' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_al_ultra96v2_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_al_ultra96v2_0_1' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_al_ultra96v2_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_1' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_1' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_1' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_1' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_10_0' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_10_0' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_10_1' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_10_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_10_1' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_10_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_12_1' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_12_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_12_1' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_12_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_10_3' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_10_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_10_3' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_10_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_10_4' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_10_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_10_4' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_10_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_2_1' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_2_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_2_1' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_2_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_3_0' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_3_0' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_3_1' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_3_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_3_1' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_3_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_3_2' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_3_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_3_2' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_3_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_5_0' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_5_0' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_5_1' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_5_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_5_1' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_5_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_8_0' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_8_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_8_0' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_8_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_9_0' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_9_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_9_0' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_axi_gpio_9_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps8_0_axi_periph_0' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:1077]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_QJIMLI' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3516]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_QJIMLI' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3516]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1D3SAH3' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3648]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1D3SAH3' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3648]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_P3UMW5' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3780]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_P3UMW5' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3780]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1E9R4HW' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3912]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1E9R4HW' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3912]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_NB1YAO' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4044]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_NB1YAO' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4044]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1FZ4A9T' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4176]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1FZ4A9T' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4176]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_MPDFMR' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4308]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_MPDFMR' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4308]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1GV49DU' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4440]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1GV49DU' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4440]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_K8X5UY' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4572]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_K8X5UY' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4572]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_1AITGY3' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4704]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_1AITGY3' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4704]
+INFO: [Synth 8-6157] synthesizing module 'm10_couplers_imp_11TD8LA' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4836]
+INFO: [Synth 8-6155] done synthesizing module 'm10_couplers_imp_11TD8LA' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4836]
+INFO: [Synth 8-6157] synthesizing module 'm11_couplers_imp_SLT6JJ' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4968]
+INFO: [Synth 8-6155] done synthesizing module 'm11_couplers_imp_SLT6JJ' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:4968]
+INFO: [Synth 8-6157] synthesizing module 'm12_couplers_imp_13AKZEL' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:5100]
+INFO: [Synth 8-6155] done synthesizing module 'm12_couplers_imp_13AKZEL' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:5100]
+INFO: [Synth 8-6157] synthesizing module 'm13_couplers_imp_REVGT8' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:5232]
+INFO: [Synth 8-6155] done synthesizing module 'm13_couplers_imp_REVGT8' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:5232]
+INFO: [Synth 8-6157] synthesizing module 'm14_couplers_imp_10LD0VS' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:5364]
+INFO: [Synth 8-6155] done synthesizing module 'm14_couplers_imp_10LD0VS' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:5364]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1A7ZMW4' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:5496]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1A7ZMW4' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:5496]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_KGUFR9' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:5906]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_KGUFR9' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:5906]
+WARNING: [Synth 8-7071] port 'M_AXI_arburst' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_arcache' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_arid' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_arlen' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_arlock' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_arqos' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_arsize' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_awburst' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_awcache' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_awid' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_awlen' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_awlock' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_awqos' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_awsize' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7071] port 'M_AXI_wlast' of module 's01_couplers_imp_KGUFR9' is unconnected for instance 's01_couplers' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+WARNING: [Synth 8-7023] instance 's01_couplers' of module 's01_couplers_imp_KGUFR9' has 78 connections declared, but only 63 given [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3411]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3475]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3475]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 38 given [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:3475]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps8_0_axi_periph_0' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:1077]
+WARNING: [Synth 8-7071] port 'S01_AXI_arready' of module 'design_1_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'S01_AXI_awready' of module 'design_1_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'S01_AXI_bid' of module 'design_1_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'S01_AXI_bresp' of module 'design_1_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'S01_AXI_bvalid' of module 'design_1_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'S01_AXI_rdata' of module 'design_1_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'S01_AXI_rid' of module 'design_1_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'S01_AXI_rlast' of module 'design_1_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'S01_AXI_rresp' of module 'design_1_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'S01_AXI_rvalid' of module 'design_1_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'S01_AXI_wready' of module 'design_1_ps8_0_axi_periph_0' is unconnected for instance 'ps8_0_axi_periph' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7023] instance 'ps8_0_axi_periph' of module 'design_1_ps8_0_axi_periph_0' has 365 connections declared, but only 354 given [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:671]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_100M_0' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_100M_0' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:1026]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:1026]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:1026]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:1026]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_100M' of module 'design_1_rst_ps8_0_100M_0' has 10 connections declared, but only 6 given [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:1026]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/.Xil/Vivado-27664-TUF-F15/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:1033]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:1033]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 43 connections declared, but only 41 given [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:1033]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s01_couplers_imp_KGUFR9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s01_couplers_imp_KGUFR9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s01_couplers_imp_KGUFR9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s01_couplers_imp_KGUFR9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m14_couplers_imp_10LD0VS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m14_couplers_imp_10LD0VS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m14_couplers_imp_10LD0VS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m14_couplers_imp_10LD0VS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m13_couplers_imp_REVGT8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m13_couplers_imp_REVGT8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m13_couplers_imp_REVGT8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m13_couplers_imp_REVGT8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m12_couplers_imp_13AKZEL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m12_couplers_imp_13AKZEL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m12_couplers_imp_13AKZEL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m12_couplers_imp_13AKZEL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m11_couplers_imp_SLT6JJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m11_couplers_imp_SLT6JJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m11_couplers_imp_SLT6JJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m11_couplers_imp_SLT6JJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m10_couplers_imp_11TD8LA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m10_couplers_imp_11TD8LA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m10_couplers_imp_11TD8LA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m10_couplers_imp_11TD8LA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m09_couplers_imp_1AITGY3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m09_couplers_imp_1AITGY3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m09_couplers_imp_1AITGY3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m09_couplers_imp_1AITGY3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m08_couplers_imp_K8X5UY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m08_couplers_imp_K8X5UY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m08_couplers_imp_K8X5UY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m08_couplers_imp_K8X5UY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m07_couplers_imp_1GV49DU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m07_couplers_imp_1GV49DU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m07_couplers_imp_1GV49DU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m07_couplers_imp_1GV49DU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m06_couplers_imp_MPDFMR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m06_couplers_imp_MPDFMR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m06_couplers_imp_MPDFMR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m06_couplers_imp_MPDFMR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m05_couplers_imp_1FZ4A9T is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m05_couplers_imp_1FZ4A9T is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m05_couplers_imp_1FZ4A9T is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m05_couplers_imp_1FZ4A9T is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m04_couplers_imp_NB1YAO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m04_couplers_imp_NB1YAO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m04_couplers_imp_NB1YAO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m04_couplers_imp_NB1YAO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m03_couplers_imp_1E9R4HW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m03_couplers_imp_1E9R4HW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m03_couplers_imp_1E9R4HW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m03_couplers_imp_1E9R4HW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_P3UMW5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_P3UMW5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_P3UMW5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_P3UMW5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M08_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M08_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M09_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M09_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M10_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M10_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M11_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M11_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M12_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M12_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M13_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M13_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M14_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M14_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2040.820 ; gain = 498.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2058.750 ; gain = 516.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2058.750 ; gain = 516.332
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2070.801 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_al_ultra96v2_0_1/design_1_al_ultra96v2_0_1/design_1_al_ultra96v2_0_1_in_context.xdc] for cell 'design_1_i/al_ultra96v2_0'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_al_ultra96v2_0_1/design_1_al_ultra96v2_0_1/design_1_al_ultra96v2_0_1_in_context.xdc] for cell 'design_1_i/al_ultra96v2_0'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_100M'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_100M'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_1/design_1_axi_gpio_1_1/design_1_axi_gpio_8_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_1/design_1_axi_gpio_1_1/design_1_axi_gpio_8_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_2_1/design_1_axi_gpio_2_1/design_1_axi_gpio_2_1_in_context.xdc] for cell 'design_1_i/axi_gpio_2'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_2_1/design_1_axi_gpio_2_1/design_1_axi_gpio_2_1_in_context.xdc] for cell 'design_1_i/axi_gpio_2'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0/design_1_axi_gpio_2_1_in_context.xdc] for cell 'design_1_i/axi_gpio_3'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0/design_1_axi_gpio_2_1_in_context.xdc] for cell 'design_1_i/axi_gpio_3'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_3_1/design_1_axi_gpio_3_1/design_1_axi_gpio_8_0_in_context.xdc] for cell 'design_1_i/axi_gpio_4'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_3_1/design_1_axi_gpio_3_1/design_1_axi_gpio_8_0_in_context.xdc] for cell 'design_1_i/axi_gpio_4'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_3_2/design_1_axi_gpio_3_2/design_1_axi_gpio_8_0_in_context.xdc] for cell 'design_1_i/axi_gpio_5'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_3_2/design_1_axi_gpio_3_2/design_1_axi_gpio_8_0_in_context.xdc] for cell 'design_1_i/axi_gpio_5'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_5_0/design_1_axi_gpio_5_0/design_1_axi_gpio_8_0_in_context.xdc] for cell 'design_1_i/axi_gpio_6'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_5_0/design_1_axi_gpio_5_0/design_1_axi_gpio_8_0_in_context.xdc] for cell 'design_1_i/axi_gpio_6'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_5_1/design_1_axi_gpio_5_1/design_1_axi_gpio_2_1_in_context.xdc] for cell 'design_1_i/axi_gpio_7'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_5_1/design_1_axi_gpio_5_1/design_1_axi_gpio_2_1_in_context.xdc] for cell 'design_1_i/axi_gpio_7'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_8_0/design_1_axi_gpio_8_0/design_1_axi_gpio_8_0_in_context.xdc] for cell 'design_1_i/axi_gpio_8'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_8_0/design_1_axi_gpio_8_0/design_1_axi_gpio_8_0_in_context.xdc] for cell 'design_1_i/axi_gpio_8'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_9_0/design_1_axi_gpio_9_0/design_1_axi_gpio_9_0_in_context.xdc] for cell 'design_1_i/axi_gpio_9'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_9_0/design_1_axi_gpio_9_0/design_1_axi_gpio_9_0_in_context.xdc] for cell 'design_1_i/axi_gpio_9'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_0/design_1_axi_gpio_10_0/design_1_axi_gpio_10_4_in_context.xdc] for cell 'design_1_i/axi_gpio_10'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_0/design_1_axi_gpio_10_0/design_1_axi_gpio_10_4_in_context.xdc] for cell 'design_1_i/axi_gpio_10'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_1/design_1_axi_gpio_10_1/design_1_axi_gpio_10_1_in_context.xdc] for cell 'design_1_i/axi_gpio_11'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_1/design_1_axi_gpio_10_1/design_1_axi_gpio_10_1_in_context.xdc] for cell 'design_1_i/axi_gpio_11'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_3/design_1_axi_gpio_10_3/design_1_axi_gpio_10_4_in_context.xdc] for cell 'design_1_i/axi_gpio_13'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_3/design_1_axi_gpio_10_3/design_1_axi_gpio_10_4_in_context.xdc] for cell 'design_1_i/axi_gpio_13'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_4/design_1_axi_gpio_10_4/design_1_axi_gpio_10_4_in_context.xdc] for cell 'design_1_i/axi_gpio_14'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_4/design_1_axi_gpio_10_4/design_1_axi_gpio_10_4_in_context.xdc] for cell 'design_1_i/axi_gpio_14'
+Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_12_1/design_1_axi_gpio_12_1/design_1_axi_gpio_12_1_in_context.xdc] for cell 'design_1_i/axi_gpio_12'
+Finished Parsing XDC File [c:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_12_1/design_1_axi_gpio_12_1/design_1_axi_gpio_12_1_in_context.xdc] for cell 'design_1_i/axi_gpio_12'
+Parsing XDC File [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/constraints/al_accel.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/constraints/al_accel.xdc:1]
+Finished Parsing XDC File [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/constraints/al_accel.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/constraints/al_accel.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/constraints/al_ultra96v2.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK'. [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/constraints/al_ultra96v2.xdc:1]
+Finished Parsing XDC File [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/constraints/al_ultra96v2.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/constraints/al_ultra96v2.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/constraints/ultra96v2.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK'. [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/constraints/ultra96v2.xdc:1]
+CRITICAL WARNING: [Designutils 20-1307] Command 'foreach' is not supported in the xdc constraint file. [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/constraints/ultra96v2.xdc:2]
+Finished Parsing XDC File [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/constraints/ultra96v2.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/RISCVAIoT/SoC/SoCSource/constraints/ultra96v2.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2167.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 32 instances
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2167.840 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2167.840 ; gain = 625.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2167.840 ; gain = 625.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/al_ultra96v2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps8_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_7. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_8. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_9. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_11. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_13. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_14. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_12. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2167.840 ; gain = 625.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2167.840 ; gain = 625.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 2167.840 ; gain = 625.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 2554.816 ; gain = 1012.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 2555.812 ; gain = 1013.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 2566.641 ; gain = 1024.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2581.422 ; gain = 1039.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2581.422 ; gain = 1039.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2581.422 ; gain = 1039.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2581.422 ; gain = 1039.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2581.422 ; gain = 1039.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2581.422 ; gain = 1039.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |design_1_xbar_0              |         1|
+|2     |design_1_auto_ds_0           |         1|
+|3     |design_1_auto_pc_0           |         1|
+|4     |design_1_al_ultra96v2_0_1    |         1|
+|5     |design_1_axi_gpio_0_1        |         1|
+|6     |design_1_axi_gpio_1_1        |         1|
+|7     |design_1_axi_gpio_10_0       |         1|
+|8     |design_1_axi_gpio_10_1       |         1|
+|9     |design_1_axi_gpio_12_1       |         1|
+|10    |design_1_axi_gpio_10_3       |         1|
+|11    |design_1_axi_gpio_10_4       |         1|
+|12    |design_1_axi_gpio_2_1        |         1|
+|13    |design_1_axi_gpio_3_0        |         1|
+|14    |design_1_axi_gpio_3_1        |         1|
+|15    |design_1_axi_gpio_3_2        |         1|
+|16    |design_1_axi_gpio_5_0        |         1|
+|17    |design_1_axi_gpio_5_1        |         1|
+|18    |design_1_axi_gpio_8_0        |         1|
+|19    |design_1_axi_gpio_9_0        |         1|
+|20    |design_1_rst_ps8_0_100M_0    |         1|
+|21    |design_1_zynq_ultra_ps_e_0_0 |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |design_1_al_ultra96v2_0    |     1|
+|2     |design_1_auto_ds           |     1|
+|3     |design_1_auto_pc           |     1|
+|4     |design_1_axi_gpio_0        |     1|
+|5     |design_1_axi_gpio_10       |     4|
+|9     |design_1_axi_gpio_12       |     1|
+|10    |design_1_axi_gpio_1        |     1|
+|11    |design_1_axi_gpio_2        |     1|
+|12    |design_1_axi_gpio_3        |     3|
+|15    |design_1_axi_gpio_5        |     2|
+|17    |design_1_axi_gpio_8        |     1|
+|18    |design_1_axi_gpio_9        |     1|
+|19    |design_1_rst_ps8_0_100M    |     1|
+|20    |design_1_xbar              |     1|
+|21    |design_1_zynq_ultra_ps_e_0 |     1|
+|22    |IOBUF                      |    32|
++------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2581.422 ; gain = 1039.004
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 50 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 2581.422 ; gain = 929.914
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2581.422 ; gain = 1039.004
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2581.422 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2625.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 32 instances
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 9614a8cc
+INFO: [Common 17-83] Releasing license: Synthesis
+111 Infos, 146 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 2625.406 ; gain = 2001.090
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2625.406 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ADMIN/OneDrive/GitHub/Optimization_RISC-V/Implementation/Arty/Arty.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 15 17:58:37 2024...

@@ -1,0 +1,72 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.512359",
+   "Default View_TopLeft":"1150,-187",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port gpio_rtl -pg 1 -lvl 8 -x 2910 -y -70 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 290 -y 290 -defaultsOSRD
+preplace inst al_ultra96v2_0 -pg 1 -lvl 5 -x 1930 -y 280 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 1 -x 290 -y 130 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 7 -x 2630 -y 50 -defaultsOSRD
+preplace inst rst_ps8_0_100M -pg 1 -lvl 5 -x 1930 -y 60 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 1 -x 290 -y 450 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 1 -x 290 -y -10 -defaultsOSRD
+preplace inst axi_gpio_3 -pg 1 -lvl 4 -x 1510 -y 790 -defaultsOSRD
+preplace inst axi_gpio_4 -pg 1 -lvl 5 -x 1930 -y 700 -defaultsOSRD
+preplace inst axi_gpio_5 -pg 1 -lvl 4 -x 1510 -y 490 -defaultsOSRD
+preplace inst axi_gpio_6 -pg 1 -lvl 1 -x 290 -y 630 -defaultsOSRD
+preplace inst axi_gpio_7 -pg 1 -lvl 1 -x 290 -y 770 -defaultsOSRD
+preplace inst axi_gpio_8 -pg 1 -lvl 7 -x 2630 -y 540 -defaultsOSRD
+preplace inst axi_gpio_9 -pg 1 -lvl 5 -x 1930 -y 1030 -defaultsOSRD
+preplace inst axi_gpio_10 -pg 1 -lvl 2 -x 780 -y 1030 -defaultsOSRD
+preplace inst axi_gpio_11 -pg 1 -lvl 3 -x 1110 -y 1040 -defaultsOSRD
+preplace inst axi_gpio_13 -pg 1 -lvl 7 -x 2630 -y 970 -defaultsOSRD
+preplace inst axi_gpio_14 -pg 1 -lvl 6 -x 2300 -y 740 -defaultsOSRD
+preplace inst axi_gpio_12 -pg 1 -lvl 1 -x 290 -y 910 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 7 0 -90 600 870 960 870 1310 410 1720 780 2170 820 2470
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 4 N 290 N 290 1260 260 1660
+preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 0 7 -40 990 640J 950 970 890 1330 610 1670 610 2160 100 2480
+preplace netloc axi_gpio_1_gpio_io_o 1 1 4 580 300 N 300 1270 270 1690
+preplace netloc axi_gpio_2_gpio_io_o 1 1 4 590 280 N 280 1250 250 1670
+preplace netloc axi_gpio_5_gpio_io_o 1 4 1 1680 200n
+preplace netloc axi_gpio_6_gpio_io_o 1 1 4 610 360 920 310 1280 280 NJ
+preplace netloc axi_gpio_3_gpio_io_o 1 4 1 1730 260n
+preplace netloc axi_gpio_4_gpio_io_o 1 4 2 1760 420 2100
+preplace netloc axi_gpio_7_gpio_io_o 1 1 4 620 400 930 320 N 320 NJ
+preplace netloc axi_gpio_8_gpio_io_o 1 4 4 1750 600 NJ 600 2440 640 2770
+preplace netloc al_ultra96v2_0_ps_data 1 5 1 2120 270n
+preplace netloc al_ultra96v2_0_ser_tx 1 2 4 910 1120 NJ 1120 NJ 1120 2140
+preplace netloc al_ultra96v2_0_leds 1 3 3 1300 1110 NJ 1110 2130
+preplace netloc al_ultra96v2_0_ps_read_rdy 1 5 3 NJ 290 2460 650 2780
+preplace netloc al_ultra96v2_0_ifm_write_rdy 1 5 2 NJ 330 2430
+preplace netloc al_ultra96v2_0_ifm_waddr 1 1 5 N 920 NJ 920 NJ 920 NJ 920 2110
+preplace netloc axi_gpio_0_GPIO 1 1 7 580J -120 N -120 N -120 N -120 NJ -120 2430 -400 2890J
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 6 NJ 270 N 270 1240 240 1650 -40 N -40 2460
+preplace netloc ps8_0_axi_periph_M00_AXI 1 0 8 -20 -110 NJ -110 N -110 N -110 N -110 NJ -110 2440 -390 2770
+preplace netloc ps8_0_axi_periph_M01_AXI 1 0 8 -10 -100 NJ -100 N -100 N -100 N -100 NJ -100 2450 -380 2790
+preplace netloc ps8_0_axi_periph_M02_AXI 1 0 8 -40 -500 NJ -500 N -500 N -500 N -500 NJ -500 N -500 2780
+preplace netloc ps8_0_axi_periph_M03_AXI 1 3 5 1360 -490 NJ -490 NJ -490 N -490 2800
+preplace netloc ps8_0_axi_periph_M04_AXI 1 4 4 1740 -480 NJ -480 N -480 2810
+preplace netloc ps8_0_axi_periph_M05_AXI 1 3 5 1370 -470 NJ -470 NJ -470 N -470 2820
+preplace netloc ps8_0_axi_periph_M06_AXI 1 0 8 -60 -460 NJ -460 N -460 N -460 NJ -460 NJ -460 N -460 2830
+preplace netloc ps8_0_axi_periph_M07_AXI 1 0 8 -30 -450 NJ -450 N -450 N -450 NJ -450 NJ -450 N -450 2840
+preplace netloc ps8_0_axi_periph_M08_AXI 1 6 2 2490 620 2810
+preplace netloc ps8_0_axi_periph_M09_AXI 1 4 4 1760 620 2150J 630 NJ 630 2790
+preplace netloc ps8_0_axi_periph_M10_AXI 1 1 7 650 -440 NJ -440 NJ -440 NJ -440 NJ -440 NJ -440 2850
+preplace netloc ps8_0_axi_periph_M11_AXI 1 2 6 980 -430 NJ -430 NJ -430 NJ -430 NJ -430 2860
+preplace netloc ps8_0_axi_periph_M13_AXI 1 6 2 2490 660 2820
+preplace netloc ps8_0_axi_periph_M14_AXI 1 5 3 2170 -410 NJ -410 2880
+preplace netloc ps8_0_axi_periph_M12_AXI 1 0 8 -50 -420 NJ -420 NJ -420 NJ -420 NJ -420 NJ -420 NJ -420 2870
+levelinfo -pg 1 -100 290 780 1110 1510 1930 2300 2630 2910
+pagesize -pg 1 -db -bbox -sgen -870 -510 3010 1140
+"
+}
+{
+   "da_axi4_cnt":"17",
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"1",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}
